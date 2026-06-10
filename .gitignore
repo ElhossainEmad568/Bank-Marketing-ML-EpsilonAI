@@ -1,0 +1,20 @@
+# Python
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+
+# Environments
+.venv/
+venv/
+
+# IDE / tooling
+.claude/
+
+# Internal reference docs (not part of the GitHub submission)
+presentation/
+screenshots/
+*.pdf
+project_report.md
+viva_preparation.md
+rubric_compliance_checklist.md
+deployment_info.md
