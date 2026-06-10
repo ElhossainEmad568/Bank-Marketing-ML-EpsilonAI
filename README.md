@@ -114,8 +114,8 @@ The deployed model is the tuned, no-duration XGBoost model.
 ## Deployment
 Project deployment platform: Streamlit Community Cloud.
 
-- EDA Dashboard: [PASTE EDA STREAMLIT APP LINK HERE]
-- ML Prediction Dashboard: [PASTE ML STREAMLIT APP LINK HERE]
+- EDA Dashboard: https://bank-marketing-ml-epsilonai-xclfo9k3y7wfo5mpnxd2pw.streamlit.app/
+- ML Prediction Dashboard: https://bank-marketing-ml-epsilonai-ekglhsuble8j9kfayyv9ds.streamlit.app/
 
 ## How to Run Locally
 ```bash
