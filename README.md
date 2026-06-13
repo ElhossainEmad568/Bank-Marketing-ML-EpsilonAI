@@ -89,25 +89,25 @@ Model comparison (without duration, pre-campaign scenario, test set):
 
 | Model | Accuracy | Precision | Recall | F1 | ROC-AUC |
 |---|---|---|---|---|---|
-| XGBoost | 0.901 | 0.610 | 0.429 | 0.504 | 0.914 |
-| Random Forest | 0.900 | 0.645 | 0.323 | 0.431 | 0.907 |
-| Logistic Regression | 0.895 | 0.603 | 0.308 | 0.408 | 0.868 |
-| SVM | 0.894 | 0.687 | 0.174 | 0.278 | 0.867 |
-| KNN | 0.894 | 0.603 | 0.274 | 0.377 | 0.786 |
-| Decision Tree | - | - | - | - | 0.690 |
+| XGBoost | 0.904 | 0.625 | 0.447 | 0.521 | 0.920 |
+| Random Forest | 0.899 | 0.643 | 0.305 | 0.414 | 0.911 |
+| Logistic Regression | 0.896 | 0.609 | 0.318 | 0.417 | 0.869 |
+| SVM | 0.894 | 0.679 | 0.176 | 0.279 | 0.869 |
+| KNN | 0.896 | 0.621 | 0.285 | 0.391 | 0.780 |
+| Decision Tree | 0.869 | 0.440 | 0.452 | 0.446 | 0.688 |
 
 **Best model: XGBoost (no-duration scenario)**, selected by ROC-AUC and balanced
 precision/recall.
 
 After GridSearchCV tuning (best params: `n_estimators=300`, `max_depth=4`,
-`learning_rate=0.1`), tuned XGBoost reaches **ROC-AUC 0.920**.
+`learning_rate=0.1`), tuned XGBoost reaches **ROC-AUC 0.924**.
 
 At the selected decision threshold of **0.25**, the deployed XGBoost model achieves:
 - Accuracy: 0.890
-- Precision: 0.520 (>= 0.30 requirement)
-- Recall: 0.736 (>= 0.30 requirement)
-- F1: 0.610
-- ROC-AUC: 0.920
+- Precision: 0.522 (>= 0.30 requirement)
+- Recall: 0.742 (>= 0.30 requirement)
+- F1: 0.613
+- ROC-AUC: 0.924
 
 The deployed model is the tuned, no-duration XGBoost model.
 
